@@ -1,0 +1,139 @@
+# 📊 Dashboard Penjualan - Visualisasi Interaktif
+
+## 📌 Gambaran Umum
+Proyek ini merupakan dashboard penjualan interaktif yang dirancang untuk membantu pengguna mengeksplorasi data penjualan berdasarkan **kategori, produk, dan waktu**. Visualisasi ini memungkinkan pengguna untuk memahami pola penjualan, membandingkan performa, serta menemukan insight secara lebih intuitif.
+
+Dashboard ini dibangun menggunakan **Chart.js** dan dilengkapi dengan berbagai fitur interaktif seperti filtering, highlighting, dan koordinasi antar visualisasi.
+
+---
+
+## 🎯 Tujuan
+- Menganalisis tren penjualan dari waktu ke waktu  
+- Membandingkan performa antar kategori dan produk  
+- Menyediakan alat eksplorasi data yang interaktif  
+- Mendukung storytelling berbasis data  
+
+---
+
+## 📁 Dataset
+Dataset yang digunakan memiliki atribut berikut:
+
+- `date` → tanggal transaksi  
+- `product` → nama produk  
+- `category` → kategori produk  
+- `sales` → jumlah penjualan  
+
+---
+
+## 📊 Komponen Visualisasi
+
+### 1. Line Chart (Tren Penjualan)
+- Menampilkan perkembangan penjualan dari waktu ke waktu  
+- Mendukung perbandingan antar kategori  
+- Membantu mengidentifikasi pola dan tren  
+
+### 2. Bar Chart (Penjualan Bulanan)
+- Menampilkan total penjualan per bulan  
+- Memudahkan melihat fluktuasi penjualan  
+
+### 3. Pie Chart (Performa Kategori)
+- Menampilkan kontribusi masing-masing kategori  
+- Mendukung interaksi klik untuk filtering  
+
+### 4. Pie Chart (Performa Produk)
+- Menampilkan kontribusi masing-masing produk  
+- Produk dengan penjualan tertinggi akan otomatis di-highlight  
+
+---
+
+## ⚙️ Fitur Interaktif
+
+### ✅ Multi-Filter
+- Filter berdasarkan **kategori (checkbox)**  
+- Filter berdasarkan **produk (checkbox)**  
+- Filter berdasarkan **rentang tanggal**  
+
+### ✅ Cross-Filtering
+- Klik pada pie chart akan memfilter seluruh visualisasi lainnya  
+
+### ✅ Highlighting
+- Produk dengan performa terbaik ditampilkan dengan warna berbeda  
+
+### ✅ Update Real-Time
+- Semua grafik akan langsung diperbarui saat filter diubah  
+
+---
+
+## 🧠 Alasan Desain (Design Decisions)
+
+### Mengapa Line Chart?
+Digunakan untuk menampilkan data berbasis waktu secara jelas serta memudahkan perbandingan antar kategori.
+
+### Mengapa Bar Chart?
+Memudahkan perbandingan agregasi data penjualan per bulan.
+
+### Mengapa Pie Chart?
+Efektif untuk menunjukkan proporsi kontribusi kategori dan produk.
+
+### Mengapa Checkbox Filter?
+Checkbox lebih fleksibel dan intuitif dibanding dropdown dalam memilih banyak data sekaligus.
+
+### Mengapa Coordinated Views?
+Memungkinkan eksplorasi data yang lebih mendalam dengan menghubungkan antar visualisasi.
+
+---
+
+## 🔄 Proses Pengembangan
+
+### Tahapan:
+1. Persiapan dan pembersihan data  
+2. Pembuatan visualisasi dasar menggunakan Chart.js  
+3. Implementasi filter kategori dan produk  
+4. Penambahan filter rentang tanggal  
+5. Implementasi cross-filter (klik pie chart)  
+6. Penyempurnaan tampilan (UI/UX)  
+7. Penambahan fitur highlight produk terbaik  
+
+### Waktu Pengerjaan:
+Sekitar **15–20 jam** termasuk debugging dan penyempurnaan fitur.
+
+### Tantangan:
+- Parsing format tanggal (`02-Mar-26`)  
+- Implementasi multi-filter yang kompleks  
+- Sinkronisasi antar grafik (coordinated views)  
+
+---
+
+## 🚀 Cara Menjalankan
+
+1. Pastikan file berikut berada dalam satu folder:
+   - `index.html`
+   - `style.css`
+   - `script.js`
+   - `dataset.csv`
+
+2. Jalankan menggunakan:
+   - **Live Server (VSCode)** (disarankan)  
+   - atau deploy melalui **GitHub Pages**
+
+---
+
+## 🌐 Deployment
+Aplikasi ini bersifat statis dan dapat dijalankan langsung melalui browser atau di-host menggunakan **GitHub Pages**.
+
+---
+
+## 📌 Pengembangan Selanjutnya
+- Menambahkan fitur pencarian pada filter  
+- Menambahkan animasi transisi antar data  
+- Menambahkan insight otomatis  
+- Optimalisasi tampilan untuk mobile  
+
+---
+
+## 📎 Referensi
+- Library visualisasi: **Chart.js**  
+- Dataset digunakan untuk keperluan pembelajaran
+
+## 🌐 Live Demo
+https://username.github.io/sales-dashboard/
