@@ -6,7 +6,7 @@ Proyek ini merupakan dashboard penjualan interaktif yang dirancang untuk membant
 Dashboard ini dibangun menggunakan **Chart.js** dan dilengkapi dengan berbagai fitur interaktif seperti filtering, highlighting, dan koordinasi antar visualisasi.
 
 ---
-
+ 
 ## 🎯 Tujuan
 - Menganalisis tren penjualan dari waktu ke waktu  
 - Membandingkan performa antar kategori dan produk  
